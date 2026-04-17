@@ -1,40 +1,32 @@
-<!-- <html>
+<!DOCTYPE html>
+<html>
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
+  margin:0;
+  padding:0;
+  width:100%;
+  height:100%;
+  background:black;
 }
-#game {
-    width: 100%;
-    height: 100%;
-}
+#game { width:100%; height:100%; }
 </style>
 </head>
 
 <body>
+
 <div id="game"></div>
 
 <script>
 EJS_player = "#game";
-EJS_core = "desmume";
-EJS_gameName = "PokePlat";
-EJS_color = "#0064ff";
-EJS_pathtodata = "https://cdn.emulatorjs.org/stable/data/";
+EJS_core = "nds";
 EJS_gameUrl = "https://pub-4b9295ce05414ceba4199cd76c10150a.r2.dev/PokePlat.nds";
+EJS_pathtodata = "https://www.emulatorjs.com/data/";
 </script>
 
-<script src="https://cdn.emulatorjs.org/stable/data/loader.js"></script>
+<script src="https://www.emulatorjs.com/loader.js"></script>
+
 </body>
-</html> -->
-<script>
-fetch("https://pub-4b9295ce05414ceba4199cd76c10150a.r2.dev/PokePlat.nds")
-  .then(r => {
-    console.log("status:", r.status);
-    return r.arrayBuffer();
-  })
-  .then(b => console.log("bytes:", b.byteLength))
-  .catch(e => console.error(e));
-</script>
+</html>
